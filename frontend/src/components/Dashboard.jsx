@@ -28,10 +28,19 @@ export default function Dashboard() {
     <div className="page">
       <header className="page-header">
         <div>
+          <div className="section-eyebrow">Realtime Mission Control</div>
           <h2>Operational Overview</h2>
           <p>Track live SLA performance, ticket volume, and resolution speed.</p>
+          <div className="status-row">
+            <span className="pill pill-success">SLA 98.2%</span>
+            <span className="pill pill-warning">2 breaches today</span>
+            <span className="pill pill-info">Agents active: 5</span>
+          </div>
         </div>
-        <button className="primary">Export Snapshot</button>
+        <div className="header-actions">
+          <button className="ghost">Download PDF</button>
+          <button className="primary">Export Snapshot</button>
+        </div>
       </header>
 
       <section className="metrics-grid">
@@ -39,6 +48,20 @@ export default function Dashboard() {
         <MetricCard label="SLA Breaches" value={dashboardMetrics.slaBreaches} subtext="Rolling 24h" />
         <MetricCard label="Ticket Volume" value={dashboardMetrics.ticketVolume} subtext="Open + in progress" />
         <MetricCard label="Agent Actions" value={dashboardMetrics.agentActions} subtext="Automated workflows" />
+      </section>
+
+      <section className="sla-banner">
+        <div>
+          <h3>SLA Health</h3>
+          <p>Keep critical incidents within 2-hour resolution targets.</p>
+        </div>
+        <div className="sla-meter">
+          <div className="sla-progress" style={{ width: "82%" }} />
+        </div>
+        <div className="sla-meta">
+          <span>82% within target</span>
+          <span>Target: 95%</span>
+        </div>
       </section>
 
       <section className="charts-grid">

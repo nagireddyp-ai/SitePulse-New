@@ -6,11 +6,37 @@ export default function ItsmPanel() {
     <div className="page">
       <header className="page-header">
         <div>
+          <div className="section-eyebrow">ITSM Control Plane</div>
           <h2>ITSM Operations</h2>
           <p>Incident and service request queues synced with mock ServiceNow.</p>
+          <div className="status-row">
+            <span className="pill pill-warning">3 nearing SLA breach</span>
+            <span className="pill pill-info">Sync every 5 min</span>
+          </div>
         </div>
-        <button className="primary">Sync Now</button>
+        <div className="header-actions">
+          <button className="ghost">View SLA policy</button>
+          <button className="primary">Sync Now</button>
+        </div>
       </header>
+
+      <section className="metrics-grid">
+        <div className="metric-card accent-card">
+          <p className="metric-label">Open Incidents</p>
+          <h3>18</h3>
+          <span className="metric-subtext">P1/P2 prioritized</span>
+        </div>
+        <div className="metric-card accent-card teal">
+          <p className="metric-label">In Progress</p>
+          <h3>12</h3>
+          <span className="metric-subtext">Actively remediating</span>
+        </div>
+        <div className="metric-card accent-card amber">
+          <p className="metric-label">Resolved Today</p>
+          <h3>34</h3>
+          <span className="metric-subtext">Auto-closed 8</span>
+        </div>
+      </section>
 
       <section className="table-section">
         <div className="section-header">

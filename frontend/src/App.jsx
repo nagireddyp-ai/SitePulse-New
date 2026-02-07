@@ -20,6 +20,17 @@ export default function App() {
     <div className="app">
       <Sidebar active={activeView} onNavigate={setActiveView} />
       <main className="content">
+        <div className="topbar">
+          <div>
+            <h1>SitePulse Command Center</h1>
+            <p>Local-first AI operations for incident triage, knowledge, and SLA tracking.</p>
+          </div>
+          <div className="topbar-actions">
+            <input className="search" placeholder="Search incidents, KB, logs" />
+            <button className="ghost">New Incident</button>
+            <button className="primary">Launch Agent Run</button>
+          </div>
+        </div>
         <ActiveComponent />
       </main>
     </div>

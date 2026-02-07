@@ -10,7 +10,7 @@
 
 body {
   margin: 0;
-  background: #f8fafc;
+  background: radial-gradient(circle at top, #eef2ff 0%, #f8fafc 45%, #f1f5f9 100%);
 }
 
 .app {
@@ -20,12 +20,13 @@ body {
 
 .sidebar {
   width: 260px;
-  background: #0f172a;
+  background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
   color: #e2e8f0;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  border-right: 1px solid rgba(148, 163, 184, 0.15);
 }
 
 .brand {
@@ -92,6 +93,34 @@ body {
   padding: 32px 40px;
 }
 
+.topbar {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+}
+
+.topbar h1 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.topbar p {
+  margin: 0;
+  color: #64748b;
+}
+
+.topbar-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -103,6 +132,21 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   gap: 16px;
+}
+
+.section-eyebrow {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.status-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .page-header h2 {
@@ -130,6 +174,21 @@ body {
   font-weight: 600;
 }
 
+.ghost {
+  background: transparent;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ghost:hover {
+  border-color: #c7d2fe;
+  color: #4338ca;
+}
+
 .primary:hover {
   background: #6847ff;
 }
@@ -152,6 +211,19 @@ body {
   padding: 18px;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.accent-card {
+  background: linear-gradient(135deg, #eef2ff 0%, #ffffff 60%);
+  border: 1px solid #e2e8f0;
+}
+
+.accent-card.teal {
+  background: linear-gradient(135deg, #ecfeff 0%, #ffffff 60%);
+}
+
+.accent-card.amber {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffffff 60%);
 }
 
 .metric-card h3 {
@@ -181,6 +253,7 @@ body {
   padding: 16px 18px;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
   min-height: 300px;
+  border: 1px solid #eef2ff;
 }
 
 .chart-header h4 {
@@ -205,6 +278,40 @@ body {
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.2);
 }
 
+.sla-banner {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 16px;
+  align-items: center;
+  background: linear-gradient(120deg, #eef2ff 0%, #f8fafc 50%, #ffffff 100%);
+  padding: 18px 22px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+}
+
+.sla-meter {
+  width: 100%;
+  background: #e2e8f0;
+  height: 10px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.sla-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #34d399 0%, #7c5cff 100%);
+  border-radius: inherit;
+}
+
+.sla-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #475569;
+  text-align: right;
+}
+
 .insights h4 {
   margin: 0 0 12px;
 }
@@ -221,6 +328,27 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 18px;
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.chip:hover {
+  border-color: #c7d2fe;
+  color: #4338ca;
 }
 
 .kb-card {
@@ -250,6 +378,21 @@ body {
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 12px;
+}
+
+.pill-success {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.pill-warning {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.pill-info {
+  background: #e0f2fe;
+  color: #0369a1;
 }
 
 .kb-tags {
@@ -294,6 +437,7 @@ body {
   flex-direction: column;
   gap: 16px;
   min-height: 360px;
+  border: 1px solid #e2e8f0;
 }
 
 .chat-bubble {
@@ -345,6 +489,7 @@ body {
   padding: 14px;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
 }
 
 .chat-input input {
@@ -359,6 +504,7 @@ body {
   border-radius: 18px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
 }
 
 .section-header {
@@ -441,6 +587,11 @@ body {
 
   .content {
     padding: 24px;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .table-row {

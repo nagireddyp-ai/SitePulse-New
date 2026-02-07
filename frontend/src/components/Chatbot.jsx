@@ -5,10 +5,18 @@ export default function Chatbot() {
     <div className="page">
       <header className="page-header">
         <div>
+          <div className="section-eyebrow">RAG Copilot</div>
           <h2>Realtime RAG Assistant</h2>
           <p>Query incidents, logs, and KB articles with source citations.</p>
+          <div className="status-row">
+            <span className="pill pill-success">Live</span>
+            <span className="pill pill-info">Context refresh: 30s</span>
+          </div>
         </div>
-        <button className="primary">Start Live Session</button>
+        <div className="header-actions">
+          <button className="ghost">Configure</button>
+          <button className="primary">Start Live Session</button>
+        </div>
       </header>
 
       <section className="chat-layout">
