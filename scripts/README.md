@@ -1,3 +1,8 @@
 # Scripts
 
-Placeholder for synthetic data generation and local setup helpers.
+Local helper scripts for seeding the RAG store and managing synthetic data.
+
+## Seed RAG Store
+```powershell
+python scripts/seed_rag.py
+```

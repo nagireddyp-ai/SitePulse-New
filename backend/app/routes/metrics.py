@@ -1,12 +1,11 @@
 from fastapi import APIRouter
 
+from app.services.metrics_service import metrics_service
+
 router = APIRouter()
 
 
 @router.get("/")
 def metrics() -> dict:
-    return {
-        "mttr_minutes": 0,
-        "sla_breaches": 0,
-        "ticket_volume": 0,
-    }
+    snapshot = metrics_service.snapshot()
+    return snapshot.__dict__
