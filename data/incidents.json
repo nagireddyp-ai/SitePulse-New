@@ -1,0 +1,29 @@
+[
+  {
+    "incident_id": "INC-1001",
+    "title": "Web server 503 errors",
+    "description": "Users receive 503 when accessing nginx. Error logs show upstream timed out.",
+    "priority": "P1",
+    "status": "Open",
+    "sla_minutes_remaining": 45,
+    "assigned_group": "Linux Ops"
+  },
+  {
+    "incident_id": "INC-1002",
+    "title": "Disk space alert on /var",
+    "description": "Disk usage on /var reached 92%.",
+    "priority": "P2",
+    "status": "Open",
+    "sla_minutes_remaining": 120,
+    "assigned_group": "Linux Ops"
+  },
+  {
+    "incident_id": "INC-1003",
+    "title": "SSH login latency",
+    "description": "SSH sessions take 10-15 seconds to establish.",
+    "priority": "P3",
+    "status": "Open",
+    "sla_minutes_remaining": 240,
+    "assigned_group": "IT Support"
+  }
+]

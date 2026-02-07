@@ -1,0 +1,16 @@
+[
+  {
+    "article_id": "KB-3001",
+    "title": "Resolve Nginx 503 upstream timeout",
+    "body": "Check upstream health, verify service ports, and increase proxy_read_timeout if needed.",
+    "tags": ["linux", "nginx", "P1"],
+    "sources": ["INC-1001"]
+  },
+  {
+    "article_id": "KB-3002",
+    "title": "Reduce disk usage on /var",
+    "body": "Identify large log files, rotate logs, and clean package cache using apt-get clean.",
+    "tags": ["linux", "storage", "P2"],
+    "sources": ["INC-1002"]
+  }
+]
