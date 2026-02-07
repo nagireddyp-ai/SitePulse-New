@@ -1,0 +1,18 @@
+[
+  {
+    "request_id": "SR-2001",
+    "title": "Provision new Linux VM",
+    "description": "Requesting a new Ubuntu 22.04 VM for analytics.",
+    "priority": "P3",
+    "status": "Open",
+    "assigned_group": "Cloud Ops"
+  },
+  {
+    "request_id": "SR-2002",
+    "title": "Reset VPN credentials",
+    "description": "User cannot authenticate to VPN after password change.",
+    "priority": "P2",
+    "status": "Open",
+    "assigned_group": "IT Support"
+  }
+]
